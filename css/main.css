@@ -1,0 +1,70 @@
+body { margin: 0; background: #ddd; /*overflow:hidden*/}
+#wrapper { width: 940px; height: 1100px; margin: 0 auto; position: relative; background: white; }
+
+#info {
+    /*position: fixed;*/
+    /*top: 10px;*/
+    width: 100px;
+    background-color: #fff;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    width: 200px;
+    padding:10px;
+    border-color: slategray;
+    color: darkslategray;
+    /*background: white;*/
+    /*padding: 20px;*/
+    opacity: 1;
+
+    /*color: slategray;*/
+    /*z-index: 100;*/
+    /*font-size: 20px;*/
+}
+
+#info #totrev{
+    font-size: 12px;
+}
+
+#info #amount { font-size: 14px; }
+#info #segment { font-size: 20px;  font-weight: bolder;}
+#info #percent { font-size: 20px; font-weight: bolder;}
+
+#credits { position: absolute; bottom: 10px; right: 10px; font-size: 10px;
+    float: right;}
+
+path { stroke: #fff; fill-rule: evenodd; }
+text { font-size: 12px; pointer-events: none; fill: white; }
+svg { margin: 50px 0 0 35px; }
+.highlighted-path { fill: slategray !important; opacity: 1!important; }
+.hidden { visibility: hidden; }
+.tooltip {
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+
+
+#splash { width: 400px; position: absolute; top: 100px; left: 30px; font-size: 40px; line-height: 1.1; }
+#splash #strap { font-size: 18px; line-height: 1.3; margin-top: 10px; color: #708090; }
+#splash #tip { font-size: 16px; margin-top: 20px; line-height: 1.3;}
+#splash a:link, a:visited { text-decoration: none; color: #005689 }
+#splash a:hover, a:active { text-decoration: none; color: #005689; }
+
+#title_header{
+    font-size: 32px;
+    text-align: center;
+    color: slategrey;
+    padding: 10px;
+}
+
+
+#help {
+    font-style: italic;
+    text-align: center;
+    color: slategrey;
+    font-size: 18px;
+}
+
+#centre-label {
+    background-image: url("images/icon_zoomout.png");
+}
