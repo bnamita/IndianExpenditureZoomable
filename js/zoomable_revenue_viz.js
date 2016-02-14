@@ -259,25 +259,25 @@ function maxY(d) {
 }
 
 function colors(d) {
-    if (d.name == "Non-Plan Expenditure") return "#49AB57";
+    if (d.name == "Non-Plan Expenditure") return "D81B1F";
     if (d.name == "Plan Expenditure") return "#0064A2";
-    //if (d.name == "Capital Receipts") return "#D81B1F";
+    //if (d.name == "Capital Receipts") return "#49AB57";
 
-    if (d.parent && d.parent.name == "Non-Plan Expenditure") return "#76B847";
+    if (d.parent && d.parent.name == "Non-Plan Expenditure") return "#E95B2E";
     if (d.parent && d.parent.name == "Plan Expenditure") return "#488FC2";
-    //if (d.parent && d.parent.name == "Capital Receipts") return "#E95B2E";
+    //if (d.parent && d.parent.name == "Capital Receipts") return "#76B847";
 
-    if (d.parent && d.parent.parent.name == "Non-Plan Expenditure") return "#c2e699";
+    if (d.parent && d.parent.parent.name == "Non-Plan Expenditure") return "#fe9929";
     if (d.parent && d.parent.parent.name == "Plan Expenditure") return "#bdc9e1";
-    //if (d.parent && d.parent.parent.name == "Capital Receipts") return "#fe9929";
+    //if (d.parent && d.parent.parent.name == "Capital Receipts") return "#c2e699";
 
     if(d.parent && d.parent.parent && d.parent.parent.parent){
         console.log("parent.parent.parent");
         console.log(d);
         return ({
-            "Non-Plan Expenditure": "#ADC946",
+            "Non-Plan Expenditure": "#FFCC4B",
             "Plan Expenditure":  "#69C3EA",
-            //"Capital Receipts":    "#FFCC4B"
+            //"Capital Receipts":    "#ADC946"
         }[d.parent.parent.parent.name]);
     }
     return "#333";
