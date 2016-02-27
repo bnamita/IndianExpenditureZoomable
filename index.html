@@ -4,21 +4,71 @@
     <meta charset="utf-8">
     <meta charset="utf-8">
     <script src="http://d3js.org/d3.v3.min.js"></script>
-    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
     <link href="css/FontAwesome.css" rel="stylesheet" media="screen">
     <link href="css/font.css" rel="stylesheet" media="screen">
     <link rel="stylesheet" href="css/main.css" rel="stylesheet">
+<<<<<<< HEAD
     <title>India's Detailed Expenditure</title>
+=======
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <title>India's Detailed Expenditure</title>
+    <script type="text/javascript" src="js/zoomable_expenditure_viz.js"></script>
+    <script>
+
+        function viz() {
+            var zoomableExpenditureViz;
+            var filename = "data/expenditure_data_201516.json";
+            var fileArr = {
+                "201516" : "data/expenditure_data_201516.json",
+                "201617" : "data/expenditure_data_201617.json"
+            }
+            if (zoomableExpenditureViz) {
+                zoomableExpenditureViz = null;
+            }
+            zoomableExpenditureViz = new ZoomableExpenditureViz();
+            zoomableExpenditureViz.createViz(filename);
+
+            $('#year li').on('click', function(){
+                $("#selectedYear").html( $(this).text() + ' <span class="caret"></span>');
+                filename = fileArr[$(this)[0].id];
+                if (zoomableExpenditureViz) {
+                    zoomableExpenditureViz = null;
+                    d3.select("svg").remove();
+                    //svg.selectAll("*").remove();
+                }
+                zoomableExpenditureViz = new ZoomableExpenditureViz();
+                zoomableExpenditureViz.createViz(filename);
+            });
+
+
+        }
+
+    </script>
+>>>>>>> master
 
 
 
 </head>
-<body>
+<body onload="viz()">
 
 <div id="wrapper">
+<<<<<<< HEAD
     <div id="title_header">Indian Budget - Expenditure</div>
+=======
+    <div id="title_header">Indian Budget - where does the money go?</div>
+>>>>>>> master
     <div id="help"> Hover/Click over a region for more details. Click on the center icon/circle to zoom out. </div>
+    <div class="dropdown">
+        Year: <button id="selectedYear" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"> 2015-16
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu" id="year">
+            <li id="201617"><a href="#">2016-17</a></li>
+            <li id="201516"><a href="#">2015-16</a></li>
+        </ul>
+    </div>
     <div id="info">
         <div><span id="segment"></span></div>
         <div><span id="amount"></span></br><span id="percent"></span> <span id="totrev"> of Total Expenditure)</span></div>
@@ -27,5 +77,5 @@
     <div id="credits">Data Visualization based on The Guardian's Fossil Fuel emission <a target="_top" href="http://www.theguardian.com/environment/interactive/2013/nov/20/which-fossil-fuel-companies-responsible-climate-change-interactive">graphic</a>, and Mike Bostock's <a target="_top" href="http://bl.ocks.org/mbostock/raw/4348373/"> Zoomable Sunburst </a></div>
 </div>
 </body>
-<script type="text/javascript" src="js/zoomable_revenue_viz.js"></script></body>
+<script type="text/javascript" src="js/zoomable_expenditure_viz.js"></script></body>
 </html>

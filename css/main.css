@@ -68,3 +68,14 @@ svg { margin: 50px 0 0 35px; }
 #centre-label {
     background-image: url("images/icon_zoomout.png");
 }
+.dropdown {
+    margin-left: 40%;
+    color: slategray;
+    font-size: 18px;
+    margin-top: 10px;
+
+}
+
+.dropdown, .dropup {
+    position: relative;
+}
