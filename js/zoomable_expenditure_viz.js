@@ -300,15 +300,18 @@ ZoomableExpenditureViz.prototype = {
     {
         if (d.name == "Non-Plan Expenditure") return "D81B1F";
         if (d.name == "Plan Expenditure") return "#0064A2";
-        //if (d.name == "Capital Receipts") return "#49AB57";
+        if (d.name == "States Share and Contingency Fund") return "#49AB57";
+        //if (d.name == "Contingency Fund") return "#000";
 
         if (d.parent && d.parent.name == "Non-Plan Expenditure") return "#E95B2E";
         if (d.parent && d.parent.name == "Plan Expenditure") return "#488FC2";
-        //if (d.parent && d.parent.name == "Capital Receipts") return "#76B847";
+        if (d.parent && d.parent.name == "States Share and Contingency Fund") return "#76B847";
+        //if (d.parent && d.parent.name == "Contingency Fund") return "#000";
 
         if (d.parent && d.parent.parent.name == "Non-Plan Expenditure") return "#fe9929";
         if (d.parent && d.parent.parent.name == "Plan Expenditure") return "#bdc9e1";
-        //if (d.parent && d.parent.parent.name == "Capital Receipts") return "#c2e699";
+        if (d.parent && d.parent.parent.name == "States Share and Contingency Fund") return "#c2e699";
+        //if (d.parent && d.parent.parent.name == "Contingency Fund") return "#000";
 
         if (d.parent && d.parent.parent && d.parent.parent.parent) {
             console.log("parent.parent.parent");
@@ -316,7 +319,8 @@ ZoomableExpenditureViz.prototype = {
             return ({
                 "Non-Plan Expenditure": "#FFCC4B",
                 "Plan Expenditure": "#69C3EA",
-                //"Capital Receipts":    "#ADC946"
+                "States Share and Contingency Fund":    "#ADC946"
+                //,"Contingency Fund":    "#000"
             }[d.parent.parent.parent.name]);
         }
         return "#333";
