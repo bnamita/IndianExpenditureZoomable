@@ -1,40 +1,40 @@
 {
     "name": "Total Expenditure",
-    "size": 1777477,
+    "size": 1978060,
     "children": [
 
                 {
                     "name": "Non-Plan Expenditure",
-                    "size": 1312200,
+                    "size": 1428050,
                     "children": [
                         {
                             "name": "Revenue Expenditure",
-                            "size": 1206027,
+                            "size": 1327408,
                             "children": [
-                                {"name": "Interest Payments and Prepayment Premium", "size": 456145},
-                                {"name": "Defence Services", "size": 152139},
-                                {"name": "Subsidies", "size": 243811},
-                                {"name": "Grants to State and U.T. Governments", "size": 108552},
-                                {"name": "Pensions", "size": 88521},
-                                {"name": "Police", "size": 51791},
-                                {"name": "Other General Services (Organs of State, tax collection, external affairs etc.)", "size": 30936},
-                                {"name": "Social Services (Education, Health, Broadcasting etc.)", "size": 29143},
-                                {"name": "Economic Services (Agriculture,Industry, Power, Transport, Communications, Science & Technology, etc.)", "size": 28984},
-                                {"name": "Postal Deficit", "size": 6665},
-                                {"name": "Expenditure of Union Territories without Legislature", "size": 4998},
-                                {"name": "Grants to Foreign Governments", "size": 4342}
+                                {"name": "Interest Payments and Prepayment Premium", "size": 492670},
+                                {"name": "Defence Services", "size": 162759},
+                                {"name": "Subsidies", "size": 250433},
+                                {"name": "Grants to State and U.T. Governments", "size": 118356},
+                                {"name": "Pensions", "size": 123368},
+                                {"name": "Police", "size": 59796},
+                                {"name": "Other General Services (Organs of State, tax collection, external affairs etc.)", "size": 35003},
+                                {"name": "Social Services (Education, Health, Broadcasting etc.)", "size": 32134},
+                                {"name": "Economic Services (Agriculture,Industry, Power, Transport, Communications, Science & Technology, etc.)", "size": 34266},
+                                {"name": "Postal Deficit", "size": 8416},
+                                {"name": "Expenditure of Union Territories without Legislature", "size": 5677},
+                                {"name": "Grants to Foreign Governments", "size": 4530}
                             ]
                         },
 
                         {
                             "name": "Capital Expenditure",
-                             "size": 106173,
+                             "size": 100622,
                              "children": [
-                                 {"name": "Defence Services", "size": 94588},
-                                 {"name": "Non-Plan Capital Outlay", "size": 10394, "_comment":"Subtracting 188 (Others) from one of the fields" },
-                                 {"name": "Loans to Public Enterprises", "size": 954},
-                                 {"name": "Loans to State and U.T. Governments", "size": 79},
-                                  {"name": "Loans to Foreign Governments", "size": 158}
+                                 {"name": "Defence Services", "size": 86340},
+                                 {"name": "Non-Plan Capital Outlay", "size": 13303, "_comment":"Subtracting 188 (Others) from one of the fields" },
+                                 {"name": "Loans to Public Enterprises", "size": 898},
+                                 {"name": "Loans to State and U.T. Governments", "size": 81},
+                                  {"name": "Loans to Foreign Governments", "size": 0}
                              ]
 
                         }
@@ -44,32 +44,36 @@
                 },
                 {
                     "name": "Plan Expenditure",
-                    "size":465277,
+                    "size":550010,
                     "children": [
                       {
                         "name": "Revenue Expenditure",
-                        "size": 330019,
+                        "size": 403628,
                         "children": [
-                          {"name": "Central Plan", "size": 139660},
+                          {"name": "Central Plan", "size": 176076},
                           {"name": "Central Assistance for State & Union Territory Plans",
-                            "size": 190359
+                            "size": 227551
                           }
                         ]
                       },
 
                       {
                         "name": "Capital Expenditure",
-                        "size": 135258,
+                        "size": 146382,
                         "children": [
-                          {"name": "Central Plan", "size": 120833},
+                          {"name": "Central Plan", "size": 132033},
                           {"name": "Central Assistance for State & Union Territory Plans",
-                            "size": 14425
+                            "size": 14349
                           }
                         ]
 
                       }
 
                     ]
+                },
+                {
+                  "name": "States Share and Contingency Fund",
+                  "size":576786
                 }
 
     ]
